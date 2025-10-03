@@ -95,8 +95,7 @@ class _LiquidGlassBorderPainter extends CustomPainter {
     final rect = Offset.zero & size;
 
     final backgroundPaint = Paint()
-      ..color = backgroundColor
-          .withValues(alpha: 0.2) // استفاده از آلفا برای شفافیت
+      ..color = backgroundColor.withValues(alpha: 0.2)
       ..style = PaintingStyle.fill;
     canvas.drawRRect(
       RRect.fromRectAndRadius(rect, Radius.circular(borderRadius)),
